@@ -20,7 +20,8 @@ class CreateTravelsTable extends Migration
             $table->string('destination_state', 30);
             $table->text('travel_promo_description');
             $table->date('travel_departure_date');
-            $table->date('travel_arrival_date');
+            $table->date('travel_return_date');
+            $table->decimal('price', 10,2);
             $table->timestamps();
         });
     }
